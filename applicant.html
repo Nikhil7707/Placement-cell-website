@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <link rel="stylesheet" href="applicant.css">
+</head>
+
+<body>
+
+    <!-- Filters and Search Bar in Same Line -->
+    <div class="filters-container">
+        <!-- Filters for Branch and Section -->
+        <div class="filters">
+            <label for="branch">Select Branch:</label>
+            <select id="branch" class="styled-select">
+                <option value="CSE">CSE</option>
+                <option value="IT">IT</option>
+                <option value="ECE">ECE</option>
+                <option value="ME">ME</option>
+            </select>
+
+            <label for="section">Select Section:</label>
+            <select id="section" class="styled-select">
+                <option value="601">601</option>
+                <option value="602">602</option>
+                <option value="603">603</option>
+                <option value="604">604</option>
+            </select>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="button" onclick="searchTable()"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>Application No.</th>
+                <th>UID</th>
+                <th>Name</th>
+                <th>Applying For</th>
+                <th>Stage</th>
+                <th>Email Address</th>
+                <th>Interviewer</th>
+                <th>Company</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12345</td>
+                <td>22BCS10001</td>
+                <td>Rahul Sharma</td>
+                <td>Software Developer</td>
+                <td>Interview Scheduled</td>
+                <td>22bcs10001@cuchd.in</td>
+                <td>Anil Gupta</td>
+                <td>TechCorp</td>
+            </tr>
+            <tr>
+                <td>23456</td>
+                <td>22BCS10002</td>
+                <td>Pooja Patel</td>
+                <td>Data Analyst</td>
+                <td>Selected</td>
+                <td>22bcs10002@cuchd.in</td>
+                <td>Rajesh Kumar</td>
+                <td>DataTech</td>
+            </tr>
+            <tr>
+                <td>34567</td>
+                <td>22BCS10003</td>
+                <td>Sanjay Verma</td>
+                <td>System Administrator</td>
+                <td>Rejected</td>
+                <td>22bcs10003@cuchd.in</td>
+                <td>Manoj Singh</td>
+                <td>InfoTech</td>
+            </tr>
+            <tr>
+                <td>45678</td>
+                <td>22BCS10004</td>
+                <td>Shweta Sharma</td>
+                <td>Web Developer</td>
+                <td>Interview Scheduled</td>
+                <td>22bcs10004@cuchd.in</td>
+                <td>Aditi Gupta</td>
+                <td>WebTech</td>
+            </tr>
+            <tr>
+                <td>56789</td>
+                <td>22BCS10005</td>
+                <td>Amit Patel</td>
+                <td>Network Engineer</td>
+                <td>Selected</td>
+                <td>22bcs10005@cuchd.in</td>
+                <td>Rakesh Verma</td>
+                <td>NetCorp</td>
+            </tr>
+            <tr>
+                <td>67890</td>
+                <td>22BCS10006</td>
+                <td>Geeta Singh</td>
+                <td>Database Administrator</td>
+                <td>Rejected</td>
+                <td>22bcs10006@cuchd.in</td>
+                <td>Anita Patel</td>
+                <td>DBTech</td>
+            </tr>
+            <tr>
+                <td>78901</td>
+                <td>22BCS10007</td>
+                <td>Deepak Verma</td>
+                <td>Software Tester</td>
+                <td>Interview Scheduled</td>
+                <td>22bcs10007@cuchd.in</td>
+                <td>Meena Gupta</td>
+                <td>TestTech</td>
+            </tr>
+            <tr>
+                <td>89012</td>
+                <td>22BCS10008</td>
+                <td>Divya Patel</td>
+                <td>UI/UX Designer</td>
+                <td>Selected</td>
+                <td>22bcs10008@cuchd.in</td>
+                <td>Vikas Singh</td>
+                <td>DesignCorp</td>
+            </tr>
+            <tr>
+                <td>90123</td>
+                <td>22BCS10009</td>
+                <td>Kunal Sharma</td>
+                <td>DevOps Engineer</td>
+                <td>Rejected</td>
+                <td>22bcs10009@cuchd.in</td>
+                <td>Rekha Patel</td>
+                <td>DevOpsTech</td>
+            </tr>
+            <tr>
+                <td>11223</td>
+                <td>22BCS10010</td>
+                <td>Radha Verma</td>
+                <td>Backend Developer</td>
+                <td>Interview Scheduled</td>
+                <td>22bcs10010@cuchd.in</td>
+                <td>Ajay Gupta</td>
+                <td>BackTech</td>
+            </tr>
+            <tr>
+                <td>33445</td>
+                <td>22BCS10011</td>
+                <td>Mohit Patel</td>
+                <td>Frontend Developer</td>
+                <td>Selected</td>
+                <td>22bcs10011@cuchd.in</td>
+                <td>Seema Sharma</td>
+                <td>FrontTech</td>
+            </tr>
+            <tr>
+                <td>55667</td>
+                <td>22BCS10012</td>
+                <td>Anjali Verma</td>
+                <td>Data Scientist</td>
+                <td>Rejected</td>
+                <td>22bcs10012@cuchd.in</td>
+                <td>Sanjay Patel</td>
+                <td>DataTech</td>
+            </tr>
+            <tr>
+                <td>77889</td>
+                <td>22BCS10013</td>
+                <td>Rajat Sharma</td>
+                <td>Cloud Engineer</td>
+                <td>Interview Scheduled</td>
+                <td>22bcs10013@cuchd.in</td>
+                <td>Kavita Gupta</td>
+                <td>CloudTech</td>
+            </tr>
+            <tr>
+                <td>99001</td>
+                <td>22BCS10014</td>
+                <td>Varsha Patel</td>
+                <td>Network Administrator</td>
+                <td>Selected</td>
+                <td>22bcs10014@cuchd.in</td>
+                <td>Arun Verma</td>
+                <td>NetAdminTech</td>
+            </tr>
+            <tr>
+                <td>22334</td>
+                <td>22BCS10015</td>
+                <td>Sachin Sharma</td>
+                <td>Security Analyst</td>
+                <td>Rejected</td>
+                <td>22bcs10015@cuchd.in</td>
+                <td>Pooja Gupta</td>
+                <td>SecurityTech</td>
+            </tr>
+            <tr>
+                <td>44556</td>
+                <td>22BCS10016</td>
+                <td>Manisha Verma</td>
+                <td>Database Developer</td>
+                <td>Interview Scheduled</td>
+                <td>22bcs10016@cuchd.in</td>
+                <td>Prakash Patel</td>
+                <td>DBTech</td>
+            </tr>
+            <tr>
+                <td>66778</td>
+                <td>22BCS10017</td>
+                <td>Ajay Sharma</td>
+                <td>UI Developer</td>
+                <td>Selected</td>
+                <td>22bcs10017@cuchd.in</td>
+                <td>Reena Verma</td>
+                <td>DesignTech</td>
+            </tr>
+            <tr>
+                <td>88990</td>
+                <td>22BCS10018</td>
+                <td>Chetna Patel</td>
+                <td>Backend Engineer</td>
+                <td>Rejected</td>
+                <td>22bcs10018@cuchd.in</td>
+                <td>Deepak Verma</td>
+                <td>BackEndTech</td>
+            </tr>
+            <tr>
+                <td>12344</td>
+                <td>22BCS10019</td>
+                <td>Sumit Sharma</td>
+                <td>Full Stack Developer</td>
+                <td>Interview Scheduled</td>
+                <td>22bcs10019@cuchd.in</td>
+                <td>Sunita Patel</td>
+                <td>FullStackTech</td>
+            </tr>
+            <tr>
+                <td>56789</td>
+                <td>22BCS10020</td>
+                <td>Rekha Verma</td>
+                <td>Frontend Engineer</td>
+                <td>Selected</td>
+                <td>22bcs10020@cuchd.in</td>
+                <td>Rahul Patel</td>
+                <td>FrontEndTech</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

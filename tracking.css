@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #5a6a79;
+    /* Bootstrap blue */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Filters and Search Bar in Same Line */
+.filters-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Filters Styles */
+.filters label,
+.filters select {
+    margin-right: 15px;
+}
+
+/* Styled Select */
+.styled-select {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 150px;
+}
+
+/* Search Container Styles */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type=text] {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.search-container button {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.content-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Adjusting the width for the new columns */
+.content-table th:nth-child(1),
+.content-table td:nth-child(1) {
+    width: 10%;
+    /* UID */
+}
+
+.content-table th:nth-child(2),
+.content-table td:nth-child(2) {
+    width: 15%;
+    /* Name */
+}
+
+.content-table th:nth-child(3),
+.content-table td:nth-child(3) {
+    width: 15%;
+    /* Applying For */
+}
+
+.content-table th:nth-child(4),
+.content-table td:nth-child(4) {
+    width: 10%;
+    /* Stage */
+}
+
+.content-table th:nth-child(5),
+.content-table td:nth-child(5) {
+    width: 15%;
+    /* Email Address */
+}
+
+.content-table th:nth-child(6),
+.content-table td:nth-child(6) {
+    width: 15%;
+    /* Interviewer */
+}
+
+.content-table th:nth-child(7),
+.content-table td:nth-child(7) {
+    width: 20%;
+    /* Company */
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}

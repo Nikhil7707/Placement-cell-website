@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <link rel="stylesheet" href="tracking.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Student Application List</h1>
+</header>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="button" onclick="searchTable()"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>Application No.</th>
+                <th>Company Name</th>
+                <th>Applying For</th>
+                <th>Status</th>
+                <th>Interviewer</th>
+                <th>Location</th>
+                <th>Upload Resume</th>
+                <th>Salary</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12345</td>
+                <td>TechCorp</td>
+                <td>Software Developer</td>
+                <td>Interview Scheduled</td>
+                <td>Anil Gupta</td>
+                <td>Delhi, India</td>
+                <td><input type="file" id="resumeUpload"></td>
+                <td>$70,000</td>
+                <td>Time: 10:00 AM, Date: 01/05/2024</td>
+            </tr>
+            <tr>
+                <td>23456</td>
+                <td>DataTech</td>
+                <td>Data Analyst</td>
+                <td>Selected</td>
+                <td>Rajesh Kumar</td>
+                <td>Mumbai, India</td>
+                <td><input type="file" id="resumeUpload"></td>
+                <td>$65,000</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>34567</td>
+                <td>InfoTech</td>
+                <td>System Administrator</td>
+                <td>Rejected</td>
+                <td>Manoj Singh</td>
+                <td>Bangalore, India</td>
+                <td><input type="file" id="resumeUpload"></td>
+                <td>$75,000</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>45678</td>
+                <td>WebTech</td>
+                <td>Web Developer</td>
+                <td>Interview Scheduled</td>
+                <td>Aditi Gupta</td>
+                <td>Hyderabad, India</td>
+                <td><input type="file" id="resumeUpload"></td>
+                <td>$68,000</td>
+                <td>Time: 2:00 PM, Date: 02/05/2024</td>
+            </tr>
+            <tr>
+                <td>56789</td>
+                <td>NetCorp</td>
+                <td>Network Engineer</td>
+                <td>Selected</td>
+                <td>Rakesh Verma</td>
+                <td>Chennai, India</td>
+                <td><input type="file" id="resumeUpload"></td>
+                <td>$72,000</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

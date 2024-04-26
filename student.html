@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <div class="filters-container">
+        <!-- Filters for Branch and Section -->
+        <div class="filters">
+            <label for="branch">Select Branch:</label>
+            <select id="branch" class="styled-select">
+                <option value="CSE">CSE</option>
+                <option value="IT">IT</option>
+                <option value="ECE">ECE</option>
+                <option value="ME">ME</option>
+            </select>
+    
+            <label for="section">Select Section:</label>
+            <select id="section" class="styled-select">
+                <option value="601">601</option>
+                <option value="602">602</option>
+                <option value="603">603</option>
+                <option value="604">604</option>
+            </select>
+        </div>
+    
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="button" onclick="searchTable()"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+    <table class="content-table">
+        <thead>
+          <tr>
+            <th>UID</th>
+            <th>Name</th>
+            <th>Semester</th>
+            <th>Branch</th>
+            <th> Personal Email ID</th>
+            <th>Status</th>
+            <th>Resume</th>
+            <th>Section</th>
+            <th>CGPA</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>22BCS10001</td>
+                <td>Aditi Sharma</td>
+                <td>4</td>
+                <td>CSE</td>
+                <td>aditi.sharma@gmail.com</td>
+                <td>Active</td>
+                <td>Available</td>
+                <td>602</td>
+            </tr>
+            <!-- Add more rows here -->
+            <tr>
+                <td>22BCS10002</td>
+                <td>Rajesh Kumar</td>
+                <td>4</td>
+                <td>CSE</td>
+                <td>rajesh.kumar@gmail.com</td>
+                <td>Active</td>
+                <td>Available</td>
+                <td>602</td>
+            </tr>
+            <tr>
+                <td>22BCS10003</td>
+                <td>Priya Singh</td>
+                <td>4</td>
+                <td>CSE</td>
+                <td>priya.singh@gmail.com</td>
+                <td>Active</td>
+                <td>Available</td>
+                <td>602</td>
+            </tr>
+            <tr>
+                <td>22BCS10004</td>
+                <td>Manoj Patel</td>
+                <td>4</td>
+                <td>CSE</td>
+                <td>manoj.patel@gmail.com</td>
+                <td>Active</td>
+                <td>Available</td>
+                <td>602</td>
+            </tr>
+            <tr>
+                <td>22BCS10005</td>
+                <td>Deepika Nair</td>
+                <td>4</td>
+                <td>CSE</td>
+                <td>deepika.nair@gmail.com</td>
+                <td>Active</td>
+                <td>Available</td>
+                <td>602</td>
+            </tr>
+            <tr>
+                <td>22BCS10006</td>
+                <td>Arjun Reddy</td>
+                <td>4</td>
+                <td>CSE</td>
+                <td>arjun.reddy@gmail.com</td>
+                <td>Active</td>
+                <td>Available</td>
+                <td>602</td>
+            </tr>
+            <tr>
+                <td>22BCS10007</td>
+                <td>Anita Sharma</td>
+                <td>4</td>
+                <td>CSE</td>
+                <td>anita.sharma@gmail.com</td>
+                <td>Active</td>
+                <td>Available</td>
+                <td>602</td>
+            </tr>
+            <tr>
+                <td>22BCS10008</td>
+                <td>Rahul Gupta</td>
+                <td>4</td>
+                <td>CSE</td>
+                <td>rahul.gupta@gmail.com</td>
+                <td>Active</td>
+                <td>Available</td>
+                <td>602</td>
+            </tr>
+            <tr>
+                <td>22BCS10009</td>
+                <td>Shweta Verma</td>
+                <td>4</td>
+                <td>CSE</td>
+                <td>shweta.verma@gmail.com</td>
+                <td>Active</td>
+                <td>Available</td>
+                <td>602</td>
+            </tr>
+            <tr>
+                <td>22BCS10010</td>
+                <td>Kiran Patel</td>
+                <td>4</td>
+                <td>CSE</td>
+                <td>kiran.patel@gmail.com</td>
+                <td>Active</td>
+                <td>Available</td>
+                <td>602</td>
+            </tr>
+            <tr>
+                <td>22BCS10011</td>
+                <td>Vivek Sharma</td>
+                <td>4</td>
+                <td>CSE</td>
+                <td>vivek.sharma@gmail.com</td>
+                <td>Active</td>
+                <td>Available</td>
+                <td>602</td>
+            </tr>
+            <tr>
+                <td>22BCS10012</td>
+                <td>Pooja Singh</td>
+                <td>4</td>
+                <td>CSE</td>
+                <td>pooja.singh@gmail.com</td>
+                <td>Active</td>
+                <td>Available</td>
+                <td>602</td>
+            </tr>
+            <tr>
+                <td>22BCS10013</td>
+                <td>Rohan Nair</td>
+                <td>4</td>
+                <td>CSE</td>
+                <td>rohan.nair@gmail.com</td>
+                <td>Active</td>
+                <td>Available</td>
+                <td>602</td>
+            </tr>
+            <tr>
+                <td>22BCS10014</td>
+                <td>Neha Reddy</td>
+                <td>4</td>
+                <td>CSE</td>
+                <td>neha.reddy@gmail.com</td>
+                <td>Active</td>
+                <td>Available</td>
+                <td>602</td>
+            </tr>
+            <tr>
+                <td>22BCS10015</td>
+                <td>Ajay Verma</td>
+                <td>4</td>
+                <td>CSE</td>
+                <td>ajay.verma@gmail.com</td>
+                <td>Active</td>
+                <td>Available</td>
+                <td>602</td>
+            </tr>
+            <tr>
+                <td>22BCS10016</td>
+                <td>Swati Patel</td>
+                <td>4</td>
+                <td>CSE</td>
+                <td>swati.patel@gmail.com</td>
+                <td>Active</td>
+                <td>Available</td>
+                <td>602</td>
+            </tr>
+            <tr>
+                <td>22BCS10017</td>
+                <td>Akash Sharma</td>
+                <td>4</td>
+                <td>CSE</td>
+                <td>akash.sharma@gmail.com</td>
+                <td>Active</td>
+                <td>Available</td>
+                <td>602</td>
+            </tr>
+            <tr>
+                <td>22BCS10018</td>
+                <td>Reena Singh</td>
+                <td>4</td>
+                <td>CSE</td>
+                <td>reena.singh@gmail.com</td>
+                <td>Active</td>
+                <td>Available</td>
+                <td>602</td>
+            </tr>
+            <tr>
+                <td>22BCS10019</td>
+                <td>Rajat Nair</td>
+                <td>4</td>
+                <td>CSE</td>
+                <td>rajat.nair@gmail.com</td>
+                <td>Active</td>
+                <td>Available</td>
+                <td>602</td>
+            </tr>
+            <tr>
+                <td>22BCS10020</td>
+                <td>Simran Reddy</td>
+                <td>4</td>
+                <td>CSE</td>
+                <td>simran.reddy@gmail.com</td>
+                <td>Active</td>
+                <td>Available</td>
+                <td>602</td>
+            </tr>
+        </tbody>
+      </table>
+</body>
+</html>
